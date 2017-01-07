@@ -12,13 +12,17 @@ var rule = {
 }
 
 function setup() {
-  createCanvas(500, 500);
+  createCanvas(windowWidth, windowHeight);
   background(52);
   for (var i = 0; i < 4; i++)
     newSentense();
   angle = radians(20);
   turtle();
   weight = 5;
+}
+
+function windowResized(){
+	resizeCanvas(windowWidth, windowHeight-50);
 }
 
 function newSentense() {
