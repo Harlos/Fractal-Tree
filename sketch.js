@@ -14,7 +14,7 @@ var rule = {
 function setup() {
   createCanvas(windowWidth, windowHeight);
   background(52);
-  for (var i = 0; i < 4; i++)
+  for (var i = 0; i < 6; i++)
     newSentense();
   angle = radians(20);
   turtle();
